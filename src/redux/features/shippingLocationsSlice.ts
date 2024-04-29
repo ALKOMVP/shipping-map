@@ -38,7 +38,6 @@ export const shippingLocationsSlice = createSlice({
     reducers: {
         setSelectedDriverId: (state, { payload }) => {
             const { selectedAddressId, selectedDriverId } = payload
-            console.log(55555, state)
             const selectedAddressIndex = state.shippingLocations.findIndex((shippingLocation) => shippingLocation.id === selectedAddressId)
             state.shippingLocations[selectedAddressIndex].selectedDriverId = selectedDriverId
         },

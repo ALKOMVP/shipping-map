@@ -34,7 +34,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
       </div>
       <p className="italic mt-8">
         Haga click en el marcador deseado para asignar un conductor

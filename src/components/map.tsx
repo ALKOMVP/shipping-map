@@ -83,7 +83,6 @@ export function Map() {
 
             // Función que se ejecuta al hacer click en un marcador
             function evtMarkerClick(e: { stop: () => void; latLng: google.maps.LatLng | google.maps.LatLngLiteral }, addressId: string, address: string) {
-                console.log(111111111, addressId)
                 e.stop()
                 infowindow.close();
                 infowindow.setPosition(e.latLng);
@@ -96,11 +95,20 @@ export function Map() {
                         </div>
                     </div>`
                 ).join("")
+                const driverUnassignedOption =
+                    `<div data-driver-id="" data-address-id=${addressId} class="driver-shippin-selector"
+                        style="display: flex; align-items: center; margin-top:1rem; cursor:pointer">
+                        <div>Ninguno</div> 
+                        <div style="background-color: grey; border-radius:4px; margin-left: 8px">
+                            <img src="${truckIco.src}" alt="truckIco" style="width:20px;"/>
+                        </div>
+                    </div>`
                 infowindow.setContent(
                     '<div>'
                     + `<h2><strong>${address}</strong></h2><br>`
                     + `<h3>Asignar a:</h2>`
                     + driversFormatted
+                    + driverUnassignedOption
                     + '</div>'
                 );
                 infowindow.open(map);
