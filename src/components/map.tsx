@@ -109,7 +109,7 @@ export function Map() {
         initMap()
     }, [shippingLocations])
     return (
-        <div className="w-[400px] h-[300px] lg:w-[800px] lg:h-[600px]" ref={mapRef} >
+        <div className="w-11/12 h-[300px] lg:w-[800px] lg:h-[600px]" ref={mapRef} >
             Google Maps
         </div>
     )

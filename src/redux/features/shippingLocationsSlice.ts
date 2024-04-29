@@ -17,7 +17,7 @@ const initialState: { shippingLocations: ShippinLocation[] } = {
         { id: "address-6", address: "Av. Callao 1956, Recoleta", selectedDriverId: null, coordinates: { lat: -34.5889475, lng: -58.3904012 } },
         { id: "address-7", address: "Mcal Antonio José de Sucre 4700, Villa Urquiza", selectedDriverId: null, coordinates: { lat: -34.5766235, lng: -58.4815089 } },
         { id: "address-8", address: "Roseti 429, Chacarita", selectedDriverId: null, coordinates: { lat: -34.5844355, lng: -58.4553049 } },
-        { id: "address-9", address: "Av. Días Velez 4551, Caballito", selectedDriverId: null, coordinates: { lat: -34.608718, lng: -58.4353969 } },
+        { id: "address-9", address: "Av. Díaz Velez 4551, Caballito", selectedDriverId: null, coordinates: { lat: -34.608718, lng: -58.4353969 } },
         { id: "address-10", address: "Dr. Juan Felipe Aranguren 3922, Caballito", selectedDriverId: null, coordinates: { lat: -34.6283945, lng: -58.4895019 } },
         { id: "address-11", address: "Mexico 547, San Telmo", selectedDriverId: null, coordinates: { lat: -34.615540, lng: -58.3781469 } },
         { id: "address-12", address: "O'Higgins 4202, Nuñez", selectedDriverId: null, coordinates: { lat: -34.5424967, lng: -58.4676615 } },
