@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect } from "react"
-import axios from "axios"
+// import axios from "axios"
 import { Loader } from "@googlemaps/js-api-loader"
 import { useAppDispatch, useAppSelector } from '@/redux/hooks'
 import { setSelectedDriverId } from "@/redux/features/shippingLocationsSlice"
@@ -123,7 +123,7 @@ export function Map() {
         initMap()
     }, [shippingLocations])
     return (
-        <div className="w-11/12 h-[300px] lg:w-[800px] lg:h-[600px]" ref={mapRef} >
+        <div className="w-full h-[300px] lg:w-[800px] lg:h-[600px]" ref={mapRef} >
             Google Maps
         </div>
     )

@@ -25,9 +25,8 @@ export default function Home() {
           <h2>CHOFERES</h2>
           {driversList}
         </div>
-        <div className="border-solid border-2 border-[#3de9a8] box-border shadow-md shadow-[#0000001f] rounded-md">
-
-        <Map  />
+        <div className="w-auto border-solid border-2 border-[#3de9a8] box-border shadow-md shadow-[#0000001f] rounded-md">
+          <Map  />
         </div>
         <div>
           <div className="border-solid border-2 border-[#3de9a8] box-border shadow-md shadow-[#0000001f] overflow-auto rounded-md h-auto lg:h-[600px] w-full p-4 mt-4 lg:w-60 lg:ml-4 lg:mt-0">
