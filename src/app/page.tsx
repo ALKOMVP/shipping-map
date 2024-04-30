@@ -30,7 +30,7 @@ export default function Home() {
         </div>
           <div className="w-full border-solid border-2 border-[#3de9a8] box-border shadow-md shadow-[#0000001f] overflow-auto rounded-md h-auto lg:h-[600px] w-full p-4 mt-4 lg:w-60 lg:ml-4 lg:mt-0">
             <h2>ENVIOS POR ASIGNAR</h2>
-            <div className="text-sm italic">
+            <div className="text-sm italic mt-4">
               {shippingLocationListUnassigned}
             </div>
         </div>
