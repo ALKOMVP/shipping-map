@@ -12,11 +12,9 @@ export function Driver({ driverData }: any) {
     const driverLocations = driverLocationsFiltered.map(driverLocation => <div key={driverLocation.id} className="text-sm italic">● {driverLocation.address}</div>)
 
     const onToggleDriverDropdown = () => {
-        if (driverLocations.length) {
-            setIsToggleActive(!isToggleActive)
-        }
+        setIsToggleActive(!isToggleActive)
     }
-    
+
     return (
         <div>
             <div className={"flex items-center mt-4 cursor-pointer"} onClick={onToggleDriverDropdown} >
@@ -27,7 +25,7 @@ export function Driver({ driverData }: any) {
                 <img src={arrowDropdown.src} alt="arrowIco" className={`transition duration-500 ease-in-out w-[25px] ${!isToggleActive && 'rotate-180'}`} />
             </div>
             <div className={`transition duration-500 ease-in-out max-h-22 ${!isToggleActive && "max-h-0 overflow: hidden"}`}>
-                {driverLocations.length ? driverLocations:<div className="text-sm italic">Sin asignaciones</div>}
+                {driverLocations.length ? driverLocations : <div className="text-sm italic">Sin asignaciones</div>}
             </div>
         </div>
     )
