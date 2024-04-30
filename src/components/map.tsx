@@ -40,13 +40,7 @@ export function Map() {
 
             const markerIco = document.createElement('img');
             markerIco.src = shippingPackageIco.src;
-            const customMarker = {
-                glyph: markerIco,
-                borderColor: "transparent",
-                background: "grey",
-                glyphColor: "white",
-                scale: 1.7
-            }
+   
             const map = new Map(mapRef.current as HTMLDivElement, mapOptions)
             if (shippingLocations.length > 0) {
                 shippingLocations.forEach(
