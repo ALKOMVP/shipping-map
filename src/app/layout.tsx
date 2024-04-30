@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from '@/redux/providers'
-import header from '../../public/assets/header.png'
+import zippinLogo from '../../public/assets/zippinLogo.svg'
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,14 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-mainFontFamily ${inter.className}`} suppressHydrationWarning={true}>
-        <div className="fixed flex justify-center h-20 w-max lg:w-full bg-white cursor-pointer" style={{ zIndex: 2 }}>
-          <div className="relative flex items-center">
+        <div className="w-screen fixed flex justify-center h-20 w-max lg:w-full bg-white cursor-pointer" style={{ zIndex: 2 }}>
             <img
-              src={header.src}
+              className="w-[150px] h-auto"
+              src={zippinLogo.src}
               alt="headerMockImg"
             />
           </div>
-        </div>
         <Providers>
           {children}
         </Providers>
