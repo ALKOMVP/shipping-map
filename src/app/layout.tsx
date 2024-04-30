@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-mainFontFamily ${inter.className}`} suppressHydrationWarning={true}>
-        <div className="fixed flex justify-center h-20 w-max lg:w-full bg-white" style={{ zIndex: 2 }}>
+        <div className="fixed flex justify-center h-20 w-max lg:w-full bg-white cursor-pointer" style={{ zIndex: 2 }}>
           <div className="relative flex items-center">
             <img
               src={header.src}
