@@ -10,11 +10,13 @@ export function Driver({ driverData }: any) {
     const shippingLocations = useAppSelector(state => state.shippingLocationsReducer.shippingLocations)
     const driverLocationsFiltered = shippingLocations.filter(location => location.selectedDriverId === driverData.id)
     const driverLocations = driverLocationsFiltered.map(driverLocation => <div key={driverLocation.id} className="text-sm italic">● {driverLocation.address}</div>)
+
     const onToggleDriverDropdown = () => {
         if (driverLocations.length) {
             setIsToggleActive(!isToggleActive)
         }
     }
+    
     return (
         <div>
             <div className={"flex items-center mt-4 cursor-pointer"} onClick={onToggleDriverDropdown} >

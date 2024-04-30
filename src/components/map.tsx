@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect } from "react"
+import axios from "axios"
 import { Loader } from "@googlemaps/js-api-loader"
 import { useAppDispatch, useAppSelector } from '@/redux/hooks'
 import { setSelectedDriverId } from "@/redux/features/shippingLocationsSlice"
@@ -12,6 +13,11 @@ export function Map() {
     const shippingLocations = useAppSelector(state => state.shippingLocationsReducer.shippingLocations)
     const drivers = useAppSelector(state => state.driversReducer.drivers)
     const dispatch = useAppDispatch();
+
+    // Para agregar funcionalidad de búsqueda y filtrado por dirección
+    // async function getCoordsForAddress(address: string){
+    //     await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${process.env.NEXT_PUBLIC_MAPS_API_KEY}`)
+    // }
 
     useEffect(() => {
         const initMap = async () => {
