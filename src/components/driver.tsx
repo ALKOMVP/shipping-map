@@ -25,7 +25,7 @@ export function Driver({ driverData }: any) {
                 <img src={arrowDropdown.src} alt="arrowIco" className={`transition duration-500 ease-in-out w-[25px] ${!isToggleActive && 'rotate-180'}`} />
             </div>
             <div className={`transition duration-500 ease-in-out max-h-22 ${!isToggleActive && "max-h-0 overflow: hidden"}`}>
-                {driverLocations}
+                {driverLocations.length ? driverLocations:<div className="text-sm italic">Sin asignaciones</div>}
             </div>
         </div>
     )
